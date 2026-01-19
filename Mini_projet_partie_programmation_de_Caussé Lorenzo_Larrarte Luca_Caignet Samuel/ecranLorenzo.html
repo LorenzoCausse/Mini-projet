@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Page des informations bancaires</title>
+	<link rel="stylesheet" href="ecrans.css">
+	<script src="https://kit.fontawesome.com/916f29fb8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="grid">
+	<header class="header-dans-grille grid">
+		<img src="Images/logoCK3.png" class="image-logo logo-dans-grille" alt="">
+		<ul class="rectangle-icone position-compte">
+			<li>
+				<i class="fa-solid fa-circle cercle-compte change"></i>
+			</li>
+			<li>
+				<img id="icone-compte" class="compte2" src="Images/imageCompte.png"
+					alt="Icone cliquable pour accéder au compte">
+			</li>
+			<li>
+				<p class="texte-compte2">Mon compte</p>
+			</li>
+		</ul>
+	</header>
+	<header class="entête">
+		<p class="étape">panier</p>
+		<p class="ligne-continue"></p>
+		<strong id="étape-actuelle">paiement</strong>
+		<p class="ligne-continue"></p>
+		<p class="étape">code(s) d'activation</p>
+	</header>
+
+	<aside id="recap-dans-grille">
+		<ul id="recap" class="text2">
+			<li id="promo" class="text1">Code promotionnel</li>
+			<li id="promo2" class="text1"><input class="promo" minlength="14" maxlength="14"
+					placeholder="XXXX-XXXX-XXXX"></li>
+			<li><img class="decalage-ligne" src="Images/ligneNoire.png" alt=""></li>
+			<li lang="en">
+				Crusader's kings III
+				<img class="croix change" src="Images/croix.png" alt="Retirer un article">
+			</li>
+			<li>
+				<img class="image-produit"
+					src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1765194528"
+					alt="Image de crusader's Kings 3">
+				Prix: 49.99€
+			</li>
+			<li><img src="Images/ligneBlancheTransparente.png" alt=""></li>
+			<li lang="en">
+				Roads to Power
+				<img class="croix change" src="Images/croix.png" alt="Retirer un article">
+			</li>
+			<li>
+				<img class="image-produit"
+					src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2671070/b3739ae4171e3c15b159ad52c938aa2f18554e55/capsule_616x353.jpg?t=1765206291"
+					alt="Image de Roads to Power">
+				Prix: 29.99€
+			</li>
+			<li><img src="Images/ligneBlancheTransparente.png" alt=""></li>
+			<li lang="en">
+				Friends and foes
+				<img class="croix change" src="Images/croix.png" alt="Retirer un article">
+			</li>
+			<li>
+				<img class="image-produit"
+					src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2114760/capsule_616x353.jpg?t=1761671853"
+					alt="Image de Friends and Foes">
+				Prix: 5.99€
+			</li>
+			<li><img class="decalage-ligne" src="Images/ligneNoireLarge.png" alt="Séparation entre les articles"></li>
+			<li><strong>Total: 103.16€</strong> (TVA: 20%)</li>
+			<li>
+				<img id="payer" class="change" src="Images/PAYER.png" alt="Payer">
+			</li>
+		</ul>
+	</aside>
+
+	<main id="contenu">
+		<form method="get">
+			<label class="text1 decalage1">Adresse de facturation: </label>
+			<label id="bouton-modifier" class="change">modifier</label>
+			<ul id="adresse" class="text1 decalage1">
+				<li>Dupont</li>
+				<li class="decalage1">2 allée du parc Montaury</li>
+				<li class="decalage1">64600 Anglet</li>
+			</ul>
+			<label class="text1 decalage1">
+				Méthode de paiement:
+				<img id="carte" class="change" src="Images/carteBleue.png" alt="Carte bancaire">
+				<img id="paypal" class="change" src="Images/paypal.png" alt="Paypal">
+			</label>
+			<ul id="paiement" class="text2 decalage1">
+				<li>Numéro de carte:</li>
+				<li class="decalage1">
+					<input type="text" class="saisie" minlength="19" maxlength="19" size="20"
+						placeholder="1234 5678 9101 1121">
+				</li>
+				<li>
+					<a>date d'expiration:</a>
+					<a class="decalage2">Code de sécurité:</a>
+				</li>
+				<li>
+					<input class="saisie decalage1" type="month">
+					<input type="number" id="secu" class="saisie" min="0" max="999" placeholder="678">
+				</li>
+				<li>Nom sur la carte:</li>
+				<li class="decalage1">
+					<input type="text" class="saisie" minlength="2" maxlength="28" size="10" placeholder="Dupont">
+				</li>
+				<li>Sauvegarder la carte ? <input class="case" type="checkbox"></li>
+			</ul>
+		</form>
+	</main>
+
+	<nav class="volet-dans-grille">
+		<ul id="volet">
+			<li>
+				<a class="fa-solid fa-circle change"></a>
+				<img class="icone salon" src="Images/salon.png" alt="icone clickable de salon">
+			</li>
+			<li>
+				<a class="fa-solid fa-circle change"></a>
+				<img class="icone personnage" src="Images/personnage.png" alt="icone clickable de personnage">
+			</li>
+			<li>
+				<a class="fa-solid fa-circle change"></a>
+				<img class="icone boutique" src="Images/boutique.png" alt="icone clickable de boutique">
+			</li>
+			<li>
+				<a href="ecranLuca.html" class="fa-solid fa-circle change"></a>
+				<img class="icone accueil" src="Images/accueil.png" alt="icone clickable d'accueil">
+			</li>
+		</ul>
+	</nav>
+</body>
+
+</html>

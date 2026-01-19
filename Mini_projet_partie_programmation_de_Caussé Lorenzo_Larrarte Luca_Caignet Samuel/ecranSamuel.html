@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>écran de Samuel</title>
+    <link rel="stylesheet" href="ecrans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="grid">
+    <nav class="volet-dans-grille">
+		<ul id="volet">
+			<li>
+				<a class="fa-solid fa-circle change"></a>
+				<img class="icone salon" src="Images/salon.png" alt="icone clickable de salon">
+			</li>
+			<li>
+				<a class="fa-solid fa-circle change"></a>
+				<img class="icone personnage" src="Images/personnage.png" alt="icone clickable de personnage">
+			</li>
+			<li>
+				<a class="fa-solid fa-circle change"></a>
+				<img class="icone boutique" src="Images/boutique.png" alt="icone clickable de boutique">
+			</li>
+			<li>
+				<a href="ecranLuca.html" class="fa-solid fa-circle change"></a>
+				<img class="icone accueil" src="Images/accueil.png" alt="icone clickable d'accueil">
+			</li>
+		</ul>
+	</nav>
+
+    <header class="rectangle-logo">
+        <img src="Images/logoCK3.png" alt="" class="image-logo">
+    </header>
+
+    <header class="rectangle-icone">
+        <i class="fa-solid fa-circle"></i>
+        <img id="icone-notification-1" class="notification change" src="Images/iconeNotification.png" alt="icone des notifications" height="80" width="65">
+        <img id="icone-notification-2" class="pop-up-1" src="Images/1Notification.png" alt="pop-up de la notification" width="50">
+        <p class="texte-notification">Notifications</p>
+    </header>
+
+    <header class="rectangle-icone cercle-compte change">
+        <i class="fa-solid fa-circle"></i>
+        <img id="icone-compte" class="compte1" src="Images/imageCompte.png" alt="icone du compte" height="100" width="70">
+        <p class="texte-compte1">Mon compte</p>
+    </header>
+
+    <header class="entête2">
+        <h1>Nom du salon</h1>
+    </header>
+    
+    <nav id="liste-groupe">
+        <ul id="liste-groupe-list">
+            <li>
+                <a class="fa-solid fa-square"></a>
+                <p class="texte-groupe">Nom groupe 1</p>
+            </li>
+            <li>
+                <a class="fa-solid fa-square"></a>
+                <p class="texte-groupe">Nom groupe 2</p>
+            </li>
+            <li>
+                <a class="fa-solid fa-square"></a>
+                <p class="texte-groupe">Nom groupe 3</p>
+            </li>
+            <li>
+                <a class="fa-solid fa-square"></a>
+                <p class="texte-groupe">Nom groupe 4</p>
+            </li>
+            <li>
+                <a class="fa-solid fa-square"></a>
+                <p class="texte-groupe">Nom groupe 5</p>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="fond">
+        <h2 class="cacher-texte">Fond</h2>
+    </section>
+
+    <main>
+        <form action="ecranSamuel.html" method="post" id="formulaire">
+            <h2>Créer ton propre groupe de discussion sur Crusader Kings</h2>
+            <ul>
+                <li id="nom-groupe">
+                    <p class="intitulé">nom :</p>
+                    <input type="text" id="nom-group" value="admin's group">
+                </li>
+                <li class="pp-groupe-generale">
+                    <input type="file" id="pp-groupe" name="pp-groupe" style="display:none">
+                    <label for="pp-groupe" class="pp-groupe-label">
+                        <img src="Images/logoCK3.png" alt="Aperçu" class="Aperçu">
+                    </label>
+                </li>
+                <li>
+                    <select name="type de salon" id="type">
+                        <option value="">type salon</option>
+                        <option value="txt">texte</option>
+                        <option value="vocal">vocal</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="privé/publique" id="privé-publique">
+                        <option value="">salon privé/publique</option>
+                        <option value="private">privé</option>
+                        <option value="public">publique</option>
+                    </select>
+                </li>
+                <li>
+                    <p class="chat-container">
+                        <label class="message-button" aria-label="Ajouter une pièce jointe">📎</label>
+                        <textarea placeholder="premier message du salon" class="chat"></textarea>
+                        <button class="message-button" aria-label="Envoyer un message vocal">🎙️</button>
+                        <button class="message-button" aria-label="Ajouter un emoji">😊</button>
+                    </p>
+                </li>
+            </ul>
+            <p class="button1">
+                <button type="submit">Valider</button>
+            </p>
+            <p class="button2">
+                <button type="reset">Annuler</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

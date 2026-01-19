@@ -1,0 +1,53 @@
+.grid {
+	/*Paramètres de la grille*/
+	display: grid;
+	grid-template-columns: 250px 805px 128px 127px 130px;
+	grid-template-rows: 130px 100px 620px 190px;
+	margin: auto;
+}
+
+#volet {
+	/*Bordure et couleurs du volet de navigation*/
+	border: 10px solid #000;
+	background-color: #22171D;
+	list-style-type: none;
+}
+
+.volet-dans-grille {
+	/*Position du volet dans la grille*/
+	grid-column: 1;
+	grid-row: 3 / 5;
+	margin-top: -16px;
+}
+
+#volet li {
+	/*Alignement vertical des éléments de la liste*/
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+}
+
+.fa-circle {
+	/*Cercle jaune derrière les icônes du volet*/
+	font-size: 133px;
+	color: #EE8617;
+	margin: 32px 0;
+	margin-right: 40px;
+	position: relative;
+	text-decoration: none;
+}
+
+.fa-circle:hover {
+	/*Permet de changer le curseur et l'opacité des éléments cliquables*/
+	opacity: 0.50;
+	cursor: pointer;
+}
+
+.icone {
+	/*Position des différents icônes (avec le texte) par dessus les cercles jaunes du volet*/
+	position: absolute;
+	pointer-events: none;
+	margin-right: 40px;
+}
